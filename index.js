@@ -30,7 +30,7 @@ const BUILD_DEFAULTS = {
     output: "build/smart-contract.wasm",
 };
 
-const COMPILER_OPTIONS = "--target release --exportRuntime";
+const COMPILER_OPTIONS = "--transform json-as/transform --target release --exportRuntime";
 
 require("yargs").scriptName("massa-sc-scripts")
     .usage("$0 <cmd> [args]")

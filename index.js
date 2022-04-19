@@ -67,7 +67,6 @@ require("yargs").scriptName("massa-sc-scripts")
             }
             
             export function main(_args: string): i32 {
-                print('before uploaded site');
                 createWebsite();
                 print('Uploaded site');
                 return 0;
